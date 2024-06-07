@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./images/home\ bg.png);
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+}
+
+.left {
+    width: 650px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.left img {
+    width: 100%;
+    position: absolute;
+    left: -100px;
+}
+
+.right {
+    width: 750px;
+    min-height: 100vh;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.right .top {
+    width: 600px;
+    font-weight: 300;
+}
+
+.right .top p {
+    font-size: 48px;
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.right .top a{
+    display: block;
+    text-align: end;
+    font-size: 32px;
+    color: #ffc901;
+}
+
+.middle img {
+    width: 600px;
+    position: absolute;
+    top: -130px;
+    right: 0px;
+}
+
+.bottom p {
+    font-size: 36px;
+}
+
+.bottom p span {
+    color: white;
+}
+
+.home-footer {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+}
+
+/* Navbar*/
+header {
+    width: 100%;
+    padding: 16px 0;
+    background-color: #555553;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+nav {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav .logo img {
+    width: 145px;
+}
+
+nav .logo {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    padding: 20px;
+}
+
+.link:hover {
+    color: #ffc901;
+}
+
+/* remove scroll bar and smooth scroll */
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* about us page */
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./images/about.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    color: white;
+    padding: 100px;
+}
+
+.about-text, .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    width: 600px;
+    flex-direction: column;
+}
+
+.about-move {
+    margin-left: 100px; /* to swipe right */
+    font-family: Arial, serif;
+}
+
+.palatable-move {
+    margin-left: 60px;
+    font-family: Arial, serif;
+}
+
+.title p {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 48px;
+}
+
+.title p span {
+    font-family: 'Atma', cursive;
+}
+
+.title, .des {
+    margin-bottom: 68px;
+}
+
+.des {
+    font-family: Arial;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2rem;
+    width: 500px;
+}
+
+.about-text a {
+    font-family: Arial, serif;
+    font-size: 32px;
+
+}
+
+.about-text a span {
+    color: #ffc901;
+}
+/* menu*/
+.menu {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./images/home\ bg.png);
+    background-size: cover;
+    color: white;
+    padding: 100px;
+    position: relative;
+}
+
+.hand {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 550px;
+}
+
+.menu-text {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(55%,10%);
+}
+
+/*gallery*/
+.gallery {
+    color: #fff;
+    background-image: url(./images/home\ bg.png);
+    background-size: cover;
+    min-height: 100vh;
+    padding: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    gap: 1rem;
+}
+
+.gallery-images div {
+    width: min-content;
+}
+
+.gallery-images img {
+    margin-top: 1rem;
+    border: 1px solid #ffc901;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-images img {
+    margin-top: 1rem;
+    border: 1px solid #ffc901;
+}
+
+/* booking page */
+.booking {
+    min-height: 100vh;
+    color: white;
+    background-image: url(./images/home\ bg.png);
+    padding: 60px;
+}
+
+.sub-title {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 4rem;
+}
+
+.input p {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.first,.mid,.last {
+    display: flex;
+    align-items: center;
+    width: min-content;
+    gap: 10rem;
+}
+
+.form .input {
+    width: 300px;
+}
+
+input, .input-i {
+    outline: none;
+    border: 1px solid #ffc901;
+    width: 300px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+input {
+    padding: 14px;
+}
+
+.input-i input {
+    border: none;
+    padding-right: 0;
+}
+
+.input-i input {
+    padding-right: 0;
+}
+
+.bx {
+    color: #ffc901;
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    background-color: #ffc901;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: #ffc901;
+    border: none;
+    color: black;
+    padding: 15px 70px 10px 70px;
+    font-size: 32px;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Credit Card Info Page */
+.info-details {
+    min-height: 100vh;
+    color: white;
+    background-image: url(./images/home\ bg.png);
+    padding: 60px;
+}
+
+.sub-title {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 4rem;
+}
+
+.input p {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.first, .mid, .last {
+    display: flex;
+    align-items: center;
+    width: min-content;
+    gap: 10rem;
+}
+
+.form .input {
+    width: 300px;
+}
+
+input, .input-i {
+    outline: none;
+    border: 1px solid #ffc901;
+    width: 300px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+input {
+    padding: 14px;
+}
+
+.input-i input {
+    border: none;
+    padding-right: 0;
+}
+
+.input-i input {
+    padding-right: 0;
+}
+
+.bx {
+    color: #ffc901;
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    background-color: #ffc901;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: #ffc901;
+    border: none;
+    color: black;
+    padding: 15px 70px 10px 70px;
+    font-size: 32px;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Contact Section */
+.contact {
+    min-height: 100vh;
+    color: white;
+    background-image: url(./images/home\ bg.png); /* Arka plan resmi */
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Dikeyde ortalama */
+    align-items: center; /* Yatayda ortalama */
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.title img {
+    width: 50px;
+    height: auto;
+}
+
+.title p {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #ffc901;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: white;
+}
+
+/* feedback section */
+.feedback {
+    min-height: 100vh;
+    color: white;
+    background-image: url(./images/home\ bg.png);
+    padding: 60px;
+}
+
+.sub-title {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 4rem;
+}
+
+.input p {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.first, .mid, .last {
+    display: flex;
+    align-items: center;
+    width: min-content;
+    gap: 10rem;
+}
+
+.form .input {
+    width: 300px;
+}
+
+input, .input-i {
+    outline: none;
+    border: 1px solid #ffc901;
+    width: 300px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+input {
+    padding: 14px;
+}
+
+.input-i input {
+    border: none;
+    padding-right: 0;
+}
+
+.input-i input {
+    padding-right: 0;
+}
+
+.bx {
+    color: #ffc901;
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    background-color: #ffc901;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: #ffc901;
+    border: none;
+    color: black;
+    padding: 15px 70px 10px 70px;
+    font-size: 32px;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.blue-textarea {
+    width: 650px;
+    height: 25px;
+    margin: 5px;
+    background-color:#555553;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.black-textarea {
+    width: 50px;
+    height: 230px;
+    margin: 5px;
+    background-color: #555553;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 20px; /* Değişti */
+    left: 75%;
+    text-align: center;
+    padding-top: 340px;
+}
+
+.table-square,
+.table-circle,
+.table-rectangle {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border: 2px solid #ffc901;
+    margin: 30px;
+    display: inline-block;
+    position: relative;
+    top: 250px; /* Değişti */
+}
+
+.table-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 2px solid #ffc901 ;
+    margin: 30px;
+    display: inline-block;
+    position: relative;
+    top: 250px; /* Değişti */
+}
+
+.table {
+    cursor: pointer;
+    position: relative;
+    top: -100px; /* Değişti */
+}
+
+.selected {
+    background-color: #ffcc00;
+}
+
+.floor {
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+.table-container {
+    display: inline-block;
+}
+
+.table-label2 {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: white;
+}
+
+.submit-button {
+    margin-top: 20px;
+}
+
+body {
+    background-image: url(./images/home\ bg.png);
+}
+
+.btn {
+    background-color: #ffc901;
+    border: none;
+    color: black;
+    font-family: 'Overpass', sans-serif;
+    cursor: pointer;
+    padding: 12px 50px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    top: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #555553;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.booking1 {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    margin-bottom: 20px;
+}
+
+.input-label1 {
+    font-weight: bold;
+}
+
+.input-i {
+    margin-top: 10px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.btn {
+    background-color: #ffc901;
+    border: none;
+    color: black;
+    font-family: 'Overpass', sans-serif;
+    cursor: pointer;
+    padding: 12px 50px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+body {
+    background-image: url(./images/home\ bg.png);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+

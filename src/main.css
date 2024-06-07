@@ -1,0 +1,41 @@
+/*Gallery Settings*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img {
+    height: 300px;
+    width: 250px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.filters span {
+    display: block;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.filters span:hover {
+    text-decoration: underline;
+}
+
+.filters span.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
